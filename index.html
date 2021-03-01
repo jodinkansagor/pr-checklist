@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Odyssey PR Checklist</title>
+  </head>
+  <body>
+    <h1>Odyssey PR Checklist</h1>
+    <div class="checklist">
+      <h2>In browser:</h2>
+      <label>
+        <input type="checkbox" />
+        Have you applied the testing steps to both Chrome and Safari?
+      </label>
+      <label>
+        <input type="checkbox" />
+        Have you applied the testing steps to all breakpoints?
+      </label>
+      <label>
+        <input type="checkbox" />
+        Were the testing steps provided exhaustive? Can you think of any other
+        steps that could be added to prevent a bug from being unnoticed?
+      </label>
+      <label>
+        <input type="checkbox" />
+        Have any new accessibility issues been introduced to the code? Run a
+        lighthouse test ? Chrome ext "Wave" Mac VoiceOver screen reader --
+        compare this to wiki standards (Axe chrome ext)
+      </label>
+      <label>
+        <input type="checkbox" />Have you checked that the target branch is
+        correct?
+      </label>
+      <label>
+        <input type="checkbox" />
+        Are there design related changes in this PR? VQA should be completed
+        before merge.
+      </label>
+
+      <h2>In VSCode</h2>
+      <label>
+        <input type="checkbox" />
+        Have all automated test been run and are they passing ?
+      </label>
+      <label>
+        <input type="checkbox" />
+        If this is a new component or feature, has a unit or automated test been
+        created?
+      </label>
+      <label>
+        <input type="checkbox" />
+        Have warnings been fixed or disabled? If they have been disabled - can
+        you think of ways to fix them?
+      </label>
+      <label>
+        <input type="checkbox" />
+        Does the code follow our coding standards? Have props and data been
+        properly defined?
+      </label>
+      <label>
+        <input type="checkbox" />
+        Does the code follow our coding standards? Have props and data been
+        properly defined?
+      </label>
+
+      <label>
+        <input type="checkbox" />
+        Did you pull the branch down and test it on your local machine? This
+        helps verify code quality better and you can see errors/warnings in real
+        time
+      </label>
+      <label>
+        <input type="checkbox" />
+        Should we set up rules that 2 engineers should approve a PR before it's
+        merged?
+      </label>
+
+      <h2>When putting up your own PR:</h2>
+      <label>
+        <input type="checkbox" />
+        I have performed a self-review of my code and of the PR build itself
+      </label>
+    </div>
+  </body>
+</html>
